@@ -1,0 +1,245 @@
+
+
+
+<body>
+
+    <div class="container-fluid" id="secondSec">
+
+    <div class="row bootstrap snippets">
+
+    <div class="col-md-12">
+
+        <!-- DIRECT CHAT WARNING -->
+
+        <div class=" direct-chat direct-chat-warning">
+
+      
+
+          <!-- /.box-header -->
+
+          <div class="box-body">
+
+            <!-- Conversations are loaded here -->
+
+            <div class="direct-chat-messages">
+
+              <!-- Message. Default to the left -->
+
+<div *ngFor="let msg of dbLoadedMessages,let i=index">
+
+
+
+  <div *ngIf="msg.channelMessage">
+
+  <!-- <h1>{{msg.message}}</h1> -->
+
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  grey   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --> 
+
+              <div class="container-fluid" *ngIf="msg.messageSenderName!==currentUserName">
+
+              <div class="row">
+
+              <div class="col-md-8">
+
+              <div class="direct-chat-msg">
+
+                <div class="direct-chat-info clearfix">
+
+                  <span class="direct-chat-name pull-left">{{msg.messageSenderName}}</span>
+
+                  <span class="direct-chat-timestamp pull-right">{{msg.sendTime}}
+</span>
+
+                </div>
+
+                <!-- /.direct-chat-info -->
+
+                <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_1.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+
+                <div class="direct-chat-text">
+
+                                 {{msg.channelMessage}}
+
+                </div>
+
+                <!-- /.direct-chat-text -->
+
+              </div>
+
+              </div>
+
+              <!-- /.direct-chat-msg -->
+
+              <div class="col-md-4">
+
+              </div>
+
+              </div>
+
+              </div>
+
+              
+
+  <!-- yellow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+   
+
+              <div class="container-fluid" *ngIf="msg.messageSenderName===currentUserName">
+
+              <div class="row">
+
+              <div class="col-md-4">
+
+              </div>
+
+              <!-- Message to the right -->
+
+              <div class="col-md-8">
+
+              <div class="direct-chat-msg right">
+
+                <div class="direct-chat-info clearfix">
+
+                  <span class="direct-chat-name pull-right">{{msg.messageSenderName}}</span>
+
+                  <span class="direct-chat-timestamp pull-left">{{msg.sendTime}}</span>
+
+                </div>
+
+                <!-- /.direct-chat-info -->
+
+                <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+
+                <div class="direct-chat-text">
+
+                  {{msg.channelMessage}}
+
+                   </div>
+
+                <!-- /.direct-chat-text -->
+
+              </div>
+
+              </div>
+
+              <!-- /.direct-chat-msg -->
+
+              </div>
+
+              </div>
+
+          
+
+  <!-- yellow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->         
+
+  </div>
+
+  </div>
+
+             <!-- Message. Default to the left -->
+
+              
+
+        
+
+             
+
+            </div>
+
+            <!--/.direct-chat-messages-->
+
+            <!-- /.direct-chat-pane -->
+
+          </div>
+
+          <!-- /.box-body -->
+
+          </div>
+
+          <div class="footer">
+
+          <div class="container-fluid">
+
+          <div class="row">
+
+          <div class="col-md-2">
+
+          </div>
+
+          <div class="col-md-10">
+
+            <form action="#" method="post">
+
+              <div class="input-group container-fluid">
+
+              <!-- Default dropup button -->
+
+    <div class="btn-group dropup">
+
+      <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <i class="fa fa-plus" aria-hidden="true"></i>
+
+      </button>
+
+      <div class="dropdown-menu">
+
+        <div class="dropdown-divider"></div>
+
+      <a class="dropdown-item" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-paperclip" aria-hidden="true"></i> Code Snippet</a>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i> Your Computer</a>
+
+        <!-- Dropdown menu links -->
+
+      </div>
+
+    </div>
+
+    
+              
+
+              
+
+                <input type="text" name="message" placeholder="Type Message ..." class="form-control" [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()">
+
+                    <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-warning btn-flat" id="send" (click)="sendMessage()">Send</button>
+
+                    </span>
+
+              </div>
+
+            </form>
+
+            </div>
+
+          </div>
+
+          </div>
+
+          </div>
+
+          <!-- /.box-footer-->
+
+        </div>
+
+        <!--/.direct-chat -->
+
+      </div>
+
+         
+
+    </div>
+
+     </body>
+
+
+
+
+
+
+

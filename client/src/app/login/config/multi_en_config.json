@@ -1,0 +1,14 @@
+  {
+	"login":{
+		"glibApp" : "GlibApp",
+		"log" : "Log in with your User Name",
+		"email" : "Email",
+		"password":"Password",
+		"forgot":"Forgot your password?",
+		"fullname":"Fullname is required",
+		"alpha":" Only alphabets are allowed",
+		"pass":"Password is required",
+		"char":"Password should have atleat 5 characters"
+		}
+}
+

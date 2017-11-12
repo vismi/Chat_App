@@ -1,0 +1,26 @@
+  {
+    "general":{
+	"jan":"23 Jan 2:00 pm",
+  "one":"23 Jan 2:05 pm",
+  "comment":"Comment",
+  "code":"Code",
+  "uploadFile":"Upload File",
+  "codeSnippet":"Code Snippet",
+  "yourComputer":"Your Computer",
+  "send":"Send",
+  "newSnippet":"New Snippet",
+  "dropdownbutton":"Dropdown button",
+  "send":"send",
+  "close":"Close",
+  "ftURL":"http://localhost:4000/file/",
+  "py":"py",
+  "js":"js",
+  "jv":"java",
+  "php":"php",
+  "html":"html",
+  "json":"json",
+  "sql":"sql",
+  "txt":"txt"
+}
+}
+

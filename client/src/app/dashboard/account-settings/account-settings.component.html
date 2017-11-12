@@ -1,0 +1,120 @@
+	<br>
+	<div class="container">
+		<div class="row"> 
+			<div class="col-md-4">  
+				<div class="card">    
+					<div class="profile-userpic">
+						<!-- profile photo -->
+						<img id="profilePhoto" src="http://192.168.252.186:4000/profile_picture/{{userData.profilePhoto}}" class="img-responsive" alt="Picture Not Set"> </div>
+						<div class="profile-usertitle">
+							<div class="profile-usertitle-name"> {{userData.username}} </div>
+							<div class="profile-usertitle-name"> {{userData.status}} </div>
+							<div class="profile-usertitle-job"> {{userData.email}} </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8"> 
+					<div class="container">
+						<!-- starting of unorderd list -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" role="presentation" href="#profile" role="tab" data-toggle="tab">{{word.profile}}</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" role="presentation" href="#buzz" role="tab" data-toggle="tab">{{word.password}}</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" role="presentation" href="#references" role="tab" data-toggle="tab">{{word.profilePhoto}}</a>
+							</li>
+							<!-- ending of unorderd list -->
+						</ul>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="profile">
+								<!-- form tag -->
+								<form>
+									<div class="form-group">
+										<label for="inputName">{{word.status}}</label>
+										<div class="row">
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="inputAddress"  placeholder="{{userData.status}}" [(ngModel)]="userData.status" [ngModelOptions]="{standalone: true}" >
+											</div>
+											<div class="col-md-3">
+												<!-- button tag -->
+												<button type="submit" class="btn btn-primary" (click)="updateStatus()">{{word.updateStatus}}</button>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputName">{{word.contact}}</label>
+										<div class="row">
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="inputAddress"  placeholder="{{userData.contact}}" [(ngModel)]="userData.contact" [ngModelOptions]="{standalone: true}">
+											</div>
+											<div class="col-md-3">
+												<button type="submit" class="btn btn-primary" (click)="updateContact()">{{word.updateContact}}</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="buzz">
+
+								<form (ngSubmit)="save(f.value, f.valid)" #f="ngForm">
+									<div class="form-group">
+										<label for="inputName">{{word.oldPassword}}</label>
+										<input type="text" [(ngModel)] = "oldPassword" [ngModelOptions]="{standalone: true}" name="categoryName" class="form-control" 
+										required
+										minlength="5"
+										#oldPass="ngModel">
+									</div>
+									<div [hidden]="oldPass.valid || (oldPass.pristine && !f.submitted)"
+									class="alert alert-danger">
+									<div [hidden]="!oldPass.hasError('required')">Password is required</div>
+									<div [hidden]="!oldPass.hasError('minlength')">Password should be of minimum length 5</div>
+								</div>
+
+								<div class="form-group">
+									<label for="inputName">{{word.newPassword}}</label>
+									<input type="text" [(ngModel)] = "newPassword" [ngModelOptions]="{standalone: true}" name="categoryName" class="form-control"
+									required
+									minlength="5"
+									#newPass="ngModel">
+								</div>
+								<div [hidden]="newPass.valid || (newPass.pristine && !f.submitted)"
+								class="alert alert-danger">
+								<div [hidden]="!newPass.hasError('required')">Password is required</div>
+								<div [hidden]="!newPass.hasError('minlength')">Password should be of minimum length 5</div>
+							</div>
+
+
+							<div class="form-group">
+								<label for="inputName">{{word.confirmPassword}}</label>
+								<input type="text" [(ngModel)] = "confNewPassword" [ngModelOptions]="{standalone: true}" name="categoryName" class="form-control"
+								
+								minlength="5"
+								required
+								validateEqual="newPassword"
+								#confirmPass="ngModel">
+							</div>
+							<div [hidden]="confirmPass.valid || (confirmPass.pristine && !f.submitted)"
+							class="alert alert-danger">
+							Password Doesn't matched!!
+						</div>
+
+					</form>
+
+
+					<button type="submit" class="btn btn-primary" (click)="updatePassword(newPassword, oldPassword)">{{word.save}}</button>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="references"><h2>{{word.uploadyourphoto}}</h2>
+					<label class="custom-file" id="customFile">
+						<input type="file" name ="file" class="custom-file-input" id="file"  aria-describedby="fileHelp" accept=".png, .jpeg, .jpg">
+						<span class="custom-file-control form-control-file"></span>
+					</label>
+					<!-- button tag -->
+					<button type="submit" class="btn btn-primary" (click)="userUpload()">{{word.updateProfilePhoto}}</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

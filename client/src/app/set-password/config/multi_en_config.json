@@ -1,0 +1,10 @@
+  {
+	"set":{
+		"glibApp" : "GlibApp",
+		"set" : "Set Password",
+		"enter" : "Enter new Password",
+		"confirm ":"Confirm Password",
+		"Password":" Password did not matched"
+		}
+}
+

@@ -1,0 +1,14 @@
+  {
+	"dashboard":{
+		"glibApp" : "GlibApp",
+		"general" : "General",
+		"channels" : "Channels",
+		"java":"JAVA",
+		"c":"C++",
+		"javascript":"Javascript",
+		"online":"online users",
+		"offline":"Offline users",
+    "sign":"Sign Out"
+		}
+}
+

@@ -1,0 +1,16 @@
+  {
+	"welcome":{
+		"glibApp" : "GlibApp",
+		"menu" : "Menu",
+		"login" : "Login",
+		"register":"Register",
+		"about":"About",
+		"contact":"Contact",
+		"inspire":"WE INSPIRE",
+		"ideas":"IDEAS | FAITH | ACTION",
+		"copyright":"Copyright &copy; Your Website 2017",
+		"privacy":"Privacy Policy",
+		"terms":"Terms of Use"
+		}
+}
+

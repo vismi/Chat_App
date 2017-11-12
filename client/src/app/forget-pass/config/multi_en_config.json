@@ -1,0 +1,12 @@
+  {
+	"forget":{
+		"glibApp" : "GlibApp",
+		"enter" : "Enter Email Id",
+		"email" : "Email",
+		"require":"Email is required",
+		"pattern":"Email is required and format should be",
+		"valid":"john@doe.com",
+		"":""
+		}
+}
+

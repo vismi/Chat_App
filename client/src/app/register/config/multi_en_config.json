@@ -1,0 +1,19 @@
+{
+    "register":{
+
+        "log":"Log in with your User Name",
+       "user":"User Name",
+         "email" : "Email ",
+        " er":"Email is required",
+        "format":"Email is required and format should be",
+        "required":"Name is required",
+        "joe":"joe@abc.com",
+        "ps":"Password is required",
+        "pp" : "Password",
+         "cp":"Confirm Password",
+       "match":" Passwords did not match",
+        "characters":"Password should have atleat 5 characters",
+        "d":"DOB"
+        
+}
+}

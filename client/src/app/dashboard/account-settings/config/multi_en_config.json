@@ -1,0 +1,24 @@
+  {
+	"accountSettings":{
+		
+    "responseNoFile":"File Doesn't Exist",
+    "notSetPP":"Profile Picture Not Set",
+   "objectEmail":"email",
+    "profile":"Profile",
+    "profilePhoto":"Profile Photo",
+    "password":"Password",
+    "status":"Status",
+    "updateStatus":"Update Status",
+    "contact":"Contact",
+    "updateContact":"Update Contact",
+    "oldPassword":"Old Password",
+    "newPassword":"New Password",
+    "confirmPassword":"Confirm Password",
+    "save":"Save",
+    "uploadyourphoto":"Upload your photo",
+    "updateProfilePhoto":"Update Profile Photo",
+    "contact":"Contact"
+
+}
+}
+

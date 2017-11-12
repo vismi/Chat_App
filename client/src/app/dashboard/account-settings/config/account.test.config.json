@@ -1,0 +1,19 @@
+  {
+  	"data":[{
+      "fullName":"Anurag",
+      "email":"vatsya.anurag1996@gmail.com",
+      "contact":123,
+      "dob":"2017-10-14"
+    }],
+   "mockResponse": {"n":1,"ok":1,"nModified":1},
+   "mockNegativeResponse": {"n":0,"ok":0,"nModified":0},
+   "userName":{"name":"Anurag"},
+   "userEmail":{"email":"vatsya.anurag1996@gmail.com"},
+   "contact":123,
+   "userDate":{"date":"2017-10-14"},
+   "positive":1,
+   "wrongUserName":{"name":"Ankit"},
+   "wrongUserEmail":{"email":"vatsya.anurag1995@gmail.com"},
+   "wrongContact":120,
+   "wrongUserDate":{"date":"2017-10-13"}
+ }
